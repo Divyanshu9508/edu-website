@@ -25,6 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head><meta name="google-site-verification" content="6fmEfvymiyUu9XIv2aeqtcewxKzF5JdxyDoy8nmVj0g" /></head>
       <body className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
         <Navbar />
         {children}
