@@ -5,13 +5,21 @@ export default function Dashboard() {
       {/* Sidebar */}
       <aside className="w-64 border-r border-slate-800 p-6 hidden md:block flex flex-col relative">
         <h2 className="text-xl font-bold mb-10 text-blue-500">BhardwajCodeLabs</h2>
-        <nav className="space-y-4 text-slate-400">
-  <Link href="/dashboard" className="block text-white font-bold">Dashboard</Link>
-  <Link href="/profile" className="block hover:text-white cursor-pointer">Profile</Link>
-  <Link href="/my-courses" className="block hover:text-white cursor-pointer">My Courses</Link>
-  <Link href="/project-store" className="block hover:text-white cursor-pointer">Project Store</Link>
-  <Link href="/help-support" className="block hover:text-white cursor-pointer">Help & Support</Link>
-  <Link href="/contact-us" className="block hover:text-white cursor-pointer">Contact Us</Link>
+        {/* Sidebar Links */}
+<nav className="space-y-4 text-slate-400">
+  <Link href="/dashboard" className="block text-white font-bold">
+    Dashboard
+  </Link>
+  
+  <Link href="/profile" className="block hover:text-white cursor-pointer transition">
+    Profile
+  </Link>
+  
+  <Link href="/my-courses" className="block hover:text-white cursor-pointer transition">
+    My Courses
+  </Link>
+  
+  {/* Baaki links ke liye bhi yehi follow karein */}
 </nav>
         
         {/* Logout Button at the bottom */}
