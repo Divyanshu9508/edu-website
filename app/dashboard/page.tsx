@@ -9,7 +9,9 @@ export default function Dashboard() {
   <Link href="/dashboard" className="block text-white font-bold">Dashboard</Link>
   <Link href="/profile" className="block hover:text-white cursor-pointer">Profile</Link>
   <Link href="/my-courses" className="block hover:text-white cursor-pointer">My Courses</Link>
-  {/* Baaki links ko bhi isi tarah <Link href="..."> se wrap karein */}
+  <Link href="/project-store" className="block hover:text-white cursor-pointer">Project Store</Link>
+  <Link href="/help-support" className="block hover:text-white cursor-pointer">Help & Support</Link>
+  <Link href="/contact-us" className="block hover:text-white cursor-pointer">Contact Us</Link>
 </nav>
         
         {/* Logout Button at the bottom */}
