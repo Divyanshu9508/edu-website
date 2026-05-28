@@ -8,7 +8,7 @@ export default function Dashboard() {
           <p className="text-white font-bold">Dashboard</p>
           <p className="hover:text-white cursor-pointer">Profile</p>
           <p className="hover:text-white cursor-pointer">My Courses</p>
-          <p className="hover:text-white cursor-pointer">Prrojects Store</p>
+          <p className="hover:text-white cursor-pointer">Project Store</p>
           <p className="hover:text-white cursor-pointer">Help & Support</p>
           <p className="hover:text-white cursor-pointer">Contact Us</p>
 
