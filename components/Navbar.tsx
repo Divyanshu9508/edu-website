@@ -11,9 +11,15 @@ export default function Navbar() {
 
         {/* Links */}
         <div className="flex items-center gap-8 text-sm font-medium text-slate-300">
-          <link href="/" className="hover:text-blue-400 transition">Home</link>
-          <link href="/dashboard" className="hover:text-blue-400 transition">Courses</link>
-          <link href="/about" className="hover:text-blue-400 transition">About</link>
+          <Link href="/" className="hover:text-blue-400 transition">
+            Home
+          </Link>
+          <Link href="/dashboard" className="hover:text-blue-400 transition">
+            Courses
+          </Link>
+          <Link href="/about" className="hover:text-blue-400 transition">
+            About
+          </Link>
         </div>
 
         {/* Login Button */}
