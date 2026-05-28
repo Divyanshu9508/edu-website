@@ -6,9 +6,12 @@ export default function Dashboard() {
         <h2 className="text-xl font-bold mb-10 text-blue-500">BhardwajCodeLabs</h2>
         <nav className="space-y-4 text-slate-400">
           <p className="text-white font-bold">Dashboard</p>
-          <p className="hover:text-white cursor-pointer">My Courses</p>
           <p className="hover:text-white cursor-pointer">Profile</p>
+          <p className="hover:text-white cursor-pointer">My Courses</p>
+          <p className="hover:text-white cursor-pointer">Prrojects Store</p>
           <p className="hover:text-white cursor-pointer">Help & Support</p>
+          <p className="hover:text-white cursor-pointer">Contact Us</p>
+
         </nav>
       </aside>
 
