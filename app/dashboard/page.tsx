@@ -18,6 +18,12 @@ export default function Dashboard() {
   <Link href="/my-courses" className="block hover:text-white cursor-pointer transition">
     My Courses
   </Link>
+  <Link href="/my-courses" className="block hover:text-white cursor-pointer transition">
+    Project store
+  </Link>
+  <Link href="/my-courses" className="block hover:text-white cursor-pointer transition">
+    Contact Us
+  </Link>
   
   {/* Baaki links ke liye bhi yehi follow karein */}
 </nav>
