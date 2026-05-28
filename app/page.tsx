@@ -4,10 +4,10 @@ import { useState } from 'react';
 export default function AuthPage() {
   const [isLogin, setIsLogin] = useState(true);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    window.location.href = '/dashboard'; 
-  };
+  const handleSubmit = (e: React.FormEvent) => {
+  e.preventDefault();
+  window.location.href = '/dashboard';
+};
 
   return (
     <div className="min-h-screen bg-slate-900 flex items-center justify-center font-sans p-4">
