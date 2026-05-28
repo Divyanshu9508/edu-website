@@ -2,7 +2,7 @@ export default function Dashboard() {
   return (
     <div className="flex min-h-screen bg-slate-950 text-white">
       {/* Sidebar */}
-      <aside className="w-64 border-r border-slate-800 p-6 hidden md:block">
+      <aside className="w-64 border-r border-slate-800 p-6 hidden md:block flex flex-col relative">
         <h2 className="text-xl font-bold mb-10 text-blue-500">BhardwajCodeLabs</h2>
         <nav className="space-y-4 text-slate-400">
           <p className="text-white font-bold">Dashboard</p>
@@ -11,8 +11,14 @@ export default function Dashboard() {
           <p className="hover:text-white cursor-pointer">Project Store</p>
           <p className="hover:text-white cursor-pointer">Help & Support</p>
           <p className="hover:text-white cursor-pointer">Contact Us</p>
-
         </nav>
+        
+        {/* Logout Button at the bottom */}
+        <div className="absolute bottom-6 left-6">
+          <button className="text-red-400 hover:text-red-300 font-medium text-sm transition">
+            Logout
+          </button>
+        </div>
       </aside>
 
       {/* Main Content */}
