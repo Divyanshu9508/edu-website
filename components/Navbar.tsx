@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-slate-800 bg-slate-950/80 backdrop-blur-md">
@@ -10,9 +11,9 @@ export default function Navbar() {
 
         {/* Links */}
         <div className="flex items-center gap-8 text-sm font-medium text-slate-300">
-          <a href="/" className="hover:text-blue-400 transition">Home</a>
-          <a href="/dashboard" className="hover:text-blue-400 transition">Courses</a>
-          <a href="/about" className="hover:text-blue-400 transition">About</a>
+          <link href="/" className="hover:text-blue-400 transition">Home</link>
+          <link href="/dashboard" className="hover:text-blue-400 transition">Courses</link>
+          <link href="/about" className="hover:text-blue-400 transition">About</link>
         </div>
 
         {/* Login Button */}

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function Dashboard() {
   return (
     <div className="flex min-h-screen bg-slate-950 text-white">
@@ -5,13 +6,11 @@ export default function Dashboard() {
       <aside className="w-64 border-r border-slate-800 p-6 hidden md:block flex flex-col relative">
         <h2 className="text-xl font-bold mb-10 text-blue-500">BhardwajCodeLabs</h2>
         <nav className="space-y-4 text-slate-400">
-          <p className="text-white font-bold">Dashboard</p>
-          <p className="hover:text-white cursor-pointer">Profile</p>
-          <p className="hover:text-white cursor-pointer">My Courses</p>
-          <p className="hover:text-white cursor-pointer">Project Store</p>
-          <p className="hover:text-white cursor-pointer">Help & Support</p>
-          <p className="hover:text-white cursor-pointer">Contact Us</p>
-        </nav>
+  <Link href="/dashboard" className="block text-white font-bold">Dashboard</Link>
+  <Link href="/profile" className="block hover:text-white cursor-pointer">Profile</Link>
+  <Link href="/my-courses" className="block hover:text-white cursor-pointer">My Courses</Link>
+  {/* Baaki links ko bhi isi tarah <Link href="..."> se wrap karein */}
+</nav>
         
         {/* Logout Button at the bottom */}
         <div className="absolute bottom-6 left-6">
