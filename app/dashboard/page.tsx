@@ -1,4 +1,4 @@
-'use client'; 
+'use client';
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -9,7 +9,12 @@ export default function Dashboard() {
   const getLinkClass = (path: string) => 
     `block p-2 rounded transition ${pathname === path ? 'bg-blue-600 text-white' : 'text-slate-400 hover:text-white'}`;
 
-  // Courses list
+  // Data
+  const updates = [
+    { title: "New Webinar", desc: "Live session on AI Agents this Sunday!", date: "2 days ago" },
+    { title: "Course Update", desc: "Python for Beginners is now updated with new projects.", date: "5 days ago" }
+  ];
+
   const courses = ["AI Courses", "Robotics", "PCB Designing", "3D Printing", "Python", "Machine Learning", "Electronic Circuit", "Tinkercad Training"];
   const videoCourses = ["Basic AI tools", "Python for beginners", "Machine Learning", "Electronic circuit components", "Basics of Data science"];
 
@@ -32,6 +37,23 @@ export default function Dashboard() {
 
       {/* Main Content */}
       <main className="flex-1 p-8">
+        
+        {/* Latest Updates Section */}
+        <div className="mb-10 bg-slate-900 p-6 rounded-2xl border border-blue-900">
+          <h2 className="text-xl font-bold text-blue-400 mb-4">Latest Updates</h2>
+          <div className="space-y-4">
+            {updates.map((update, index) => (
+              <div key={index} className="flex justify-between items-center border-b border-slate-700 pb-2">
+                <div>
+                  <p className="font-semibold text-white">{update.title}</p>
+                  <p className="text-sm text-slate-400">{update.desc}</p>
+                </div>
+                <span className="text-xs text-blue-500 bg-blue-950 px-2 py-1 rounded">{update.date}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Available Courses */}
         <h1 className="text-2xl font-bold mb-6">Available Courses</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
