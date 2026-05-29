@@ -5,7 +5,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         
         {/* Branding */}
-        <div className="text-xl font-bold text-white tracking-tight">
+        <div className="text-xl font-bold text-yellow tracking-tight">
           Bhardwaj<span className="text-blue-500">CodeLabs</span>
         </div>
 
