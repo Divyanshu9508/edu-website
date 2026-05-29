@@ -28,6 +28,7 @@ export default function Dashboard() {
           <Link href="/dashboard" className={getLinkClass('/dashboard')}>Dashboard</Link>
           <Link href="/profile" className={getLinkClass('/profile')}>Profile</Link>
           <Link href="/my-courses" className={getLinkClass('/my-courses')}>My Courses</Link>
+          <Link href="/project-store" className={getLinkClass('/project-store')}>Project Store</Link>
         </nav>
 
         <div className="absolute bottom-6 left-6">
