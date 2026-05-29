@@ -4,7 +4,7 @@ export default function Dashboard() {
     <div className="flex min-h-screen bg-slate-950 text-white">
       {/* Sidebar */}
       <aside className="w-64 border-r border-slate-800 p-6 hidden md:block flex flex-col relative">
-        <h2 className="text-xl font-bold mb-10 text-blue-500">SynapseAcademy</h2>
+        <h2 className="text-xl font-bold mb-10 text-blue-500">BhardwajCodeLabs</h2>
         {/* Sidebar Links */}
 <nav className="space-y-4 text-slate-400">
   <Link href="/dashboard" className="block text-white font-bold">

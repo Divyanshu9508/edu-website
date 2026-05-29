@@ -6,7 +6,7 @@ export default function Navbar() {
         
         {/* Branding */}
         <div className="text-xl font-bold text-white tracking-tight">
-          Synapse<span className="text-blue-500">Academy</span>
+          Bhardwaj<span className="text-blue-500">CodeLabs</span>
         </div>
 
         {/* Links */}
